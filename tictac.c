@@ -4,7 +4,7 @@
 
 char square[10] = {'0','1','2','3','4','5','6','7','8','9'};
 
-int checkwin;
+
 void board();
 
 int main() {
@@ -87,5 +87,22 @@ return -1; }
 void board()
 {
 system("cls");
-printf("\n\n\tTic 
+printf("\n\n\tTic Tac Toe\n\n");
 
+printf("Player 1 (X) - Player 2 (O)");
+
+printf("   |   |   \n");
+printf(" %c  | %c  | %c \n",square[1],square[2], square[3]);
+printf("___|___|___\n");
+printf("   |   |   \n");
+
+printf("  %c |  %c | %c  \n",square[4], square[5], square[6]);
+printf("___|___|___\n");
+printf("   |   |   \n");
+
+printf("  %c |  %c | %c  \n",square[7], square[8], square[9]);
+
+
+
+printf("   |   |   \n\n");
+}
