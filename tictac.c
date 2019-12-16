@@ -4,7 +4,7 @@
 
 char square[10] = {'0','1','2','3','4','5','6','7','8','9'};
 
-
+int checkwin();
 void board();
 
 int main() {
@@ -38,7 +38,7 @@ else if (choice == 8 && square[8] == '8')
         square[8]= mark;
 else if (choice == 9 && square[9] == '9')
         square[9]= mark;
-else { printf("Invalid move ");
+else { printf("INVALID MOVE   ");
 
 player--;
 getch(); }
@@ -51,7 +51,7 @@ board();
 if (i == 1)
 printf("Player %d WINS ", --player);
 else
-printf ("Game draws");
+printf ("GAME DRAWS  ");
 
 
 
@@ -59,7 +59,6 @@ printf ("Game draws");
 getch();
 return 0;
 }
-
 
 int checkwin()
 {
@@ -86,23 +85,23 @@ return -1; }
 
 void board()
 {
-system("cls");
-printf("\n\n\tTic Tac Toe\n\n");
+
+printf("\n\n\tTic Tac Toe - 2 players\n\n");
 
 printf("Player 1 (X) - Player 2 (O)");
 
-printf("   |   |   \n");
-printf(" %c  | %c  | %c \n",square[1],square[2], square[3]);
-printf("___|___|___\n");
-printf("   |   |   \n");
+printf("	|	|	\n");
+printf(" %c	| %c	| %c	\n",square[1],square[2], square[3]);
+printf("________|_______|_______\n");
+printf(" 	|  	| 	\n");
 
-printf("  %c |  %c | %c  \n",square[4], square[5], square[6]);
-printf("___|___|___\n");
-printf("   |   |   \n");
+printf("  %c 	|  %c 	| %c  	\n",square[4], square[5], square[6]);
+printf("________|_______|_______\n");
+printf("  	| 	|   \n");
 
-printf("  %c |  %c | %c  \n",square[7], square[8], square[9]);
+printf("  %c 	|  %c	| %c  \n",square[7], square[8], square[9]);
 
 
 
-printf("   |   |   \n\n");
+printf("   	|   	|   \n\n");
 }
